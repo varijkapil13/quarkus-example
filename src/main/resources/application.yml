@@ -1,0 +1,32 @@
+# Configuration file
+quarkus:
+  http:
+    cors: true
+  swagger-ui:
+    enable: true
+    path: /swagger-ui
+  datasource:
+    metrics:
+      enabled: true
+    health:
+      enabled: true
+    db-kind: postgresql
+    username: vk_task_app
+    password: vk_task_app
+    jdbc:
+      url: jdbc:postgresql://localhost:5433/vk_task_app
+      min-size: 4
+      max-size: 16
+  hibernate-orm:
+    database:
+      generation: drop-and-create
+
+  oidc:
+    auth-server-url: http://localhost:9991/auth/realms/vk_task_app
+    client-id: vk_task_app
+    credentials:
+      secret: 369e2612-23d5-4519-b95a-8e2cc69e0bda
+
+  keycloak:
+    policy-enforcer:
+      enable: true

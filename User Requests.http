@@ -1,0 +1,10 @@
+### Get all tasks for this user
+GET http://localhost:8080/users
+Authorization: Bearer {{access_token}}
+
+###
+### Get all tasks for this user
+GET http://localhost:8080/users/1
+Authorization: Bearer {{access_token}}
+
+###

@@ -1,0 +1,35 @@
+
+### Create a task
+POST http://localhost:8080/tasks
+Authorization: Bearer {{access_token}}
+Content-Type: application/json
+
+{
+  "title": "Sample Task",
+  "description": "This is a sample task"
+}
+
+### Get all tasks for this user
+GET http://localhost:8080/tasks
+Authorization: Bearer {{access_token}}
+
+###
+
+### Get all tasks for this user
+GET http://localhost:8080/tasks/1
+Authorization: Bearer {{access_token}}
+
+###
+
+### Get all tasks for this user
+DELETE http://localhost:8080/tasks/1
+Authorization: Bearer {{access_token}}
+
+###
+### Get all tasks for this user
+PUT http://localhost:8080/tasks/1?listId=2
+Authorization: Bearer {{access_token}}
+
+###
+
+
